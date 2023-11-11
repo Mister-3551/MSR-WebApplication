@@ -21,7 +21,7 @@ export default function Missions() {
                     missions.map((mission, id) =>
                         <div key={id} className={"col-lg-4 col-md-6 col-sm-12 mb-4"}>
                             <div className={"card missions-card"}>
-                                <img src={mission.image} alt={mission.name} className={"image"}/>
+                                <img src={process.env.REACT_APP_IMAGES_MISSIONS + mission.image} alt={mission.name} className={"image"}/>
                                 <div className={"card-body"}>
                                     <h5 className={"card-title"}>{mission.name}</h5>
                                     <p>{mission.description}</p>

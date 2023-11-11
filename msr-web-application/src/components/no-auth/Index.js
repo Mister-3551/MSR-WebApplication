@@ -28,7 +28,7 @@ export default function Index() {
                         <div className={"col-lg-7 order-1 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"}>
                             <p>
                                 <video className={"img-fluid"} controls autoPlay={false} loop={true}>
-                                    <source src={"https://api.memostickrescue.eu.org/video/trailer-video.mp4"} type={"video/mp4"}/>
+                                    <source src={process.env.REACT_APP_INTRO_VIDEO + "intro-video.mp4"} type={"video/mp4"}/>
                                     <track src={"../captions/En.vtt"} kind={"captions"} srcLang={"en"} label={"english_captions"}/>
                                 </video>
                             </p>
@@ -71,7 +71,7 @@ export default function Index() {
                             <div className={"row col-12"}>
                                 <div className={"col-md-4 mb-4"}>
                                     <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                                        <img src={"https://api.memostickrescue.eu.org/other/windows-icon.png"} alt={"windows-icon"} className={"image"}/>
+                                        <img src={process.env.REACT_APP_IMAGES_OTHER + "windows-icon.png"} alt={"windows-icon"} className={"image"}/>
                                         <h4>Windows</h4>
                                         <p>EXE file</p>
                                         <div className={"text-center"}>
@@ -81,7 +81,7 @@ export default function Index() {
                                 </div>
                                 <div className={"col-md-4 mb-4"}>
                                     <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                                        <img src={"https://api.memostickrescue.eu.org/other/linux-icon.png"} alt={"linux-icon"} className={"image"}/>
+                                        <img src={process.env.REACT_APP_IMAGES_OTHER + "linux-icon.png"} alt={"linux-icon"} className={"image"}/>
                                         <h4>Linux</h4>
                                         <p>ZIP file</p>
                                         <div className={"text-center"}>
@@ -91,7 +91,7 @@ export default function Index() {
                                 </div>
                                 <div className={"col-md-4 mb-4"}>
                                     <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                                        <img src={"https://api.memostickrescue.eu.org/other/android-icon.png"} alt={"android-icon"} className={"image"}/>
+                                        <img src={process.env.REACT_APP_IMAGES_OTHER + "android-icon.png"} alt={"android-icon"} className={"image"}/>
                                         <h4>Android</h4>
                                         <p>APK file</p>
                                         <div className={"text-center"}>
@@ -114,7 +114,7 @@ export default function Index() {
                 <div className={"row"}>
                     <div className={"col-lg-4 mb-4"}>
                         <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                            <img src={"https://api.memostickrescue.eu.org/other/github-icon.png"} alt={"windows-icon"} className={"image"} />
+                            <img src={process.env.REACT_APP_IMAGES_OTHER + "github-icon.png"} alt={"github-icon"} className={"image"} />
                             <h4>Video game</h4>
                             <i className={"description"}>This code gives us insight into the game itself, in which everything takes place. From the store where you can buy different skins, to the game itself, which you can play</i>
                             <div className={"text-center mt-4"}>
@@ -124,21 +124,21 @@ export default function Index() {
                     </div>
                     <div className={"col-lg-4 mb-4"}>
                         <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                            <img src={"https://api.memostickrescue.eu.org/other/github-icon.png"} alt={"linux-icon"} className={"image"} />
+                            <img src={process.env.REACT_APP_IMAGES_OTHER + "github-icon.png"} alt={"github-icon"} className={"image"} />
                             <h4>Web application</h4>
                             <i className={"description"}>This code provides insight into the development process of a web application designed to view your stats and stats from any player</i>
                             <div className={"text-center mt-4"}>
-                                <a href={"https://github.com/Mister-3551/Frontend"} target={"_blank"} rel={"noreferrer"}>View code</a>
+                                <a href={"https://github.com/Mister-3551/MSR-WebApplication"} target={"_blank"} rel={"noreferrer"}>View code</a>
                             </div>
                         </div>
                     </div>
                     <div className={"col-lg-4 mb-4"}>
                         <div className={"member d-flex flex-column justify-content-center align-items-center"}>
-                            <img src={"https://api.memostickrescue.eu.org/other/github-icon.png"} alt={"android-icon"} className={"image"} />
+                            <img src={process.env.REACT_APP_IMAGES_OTHER + "github-icon.png"} alt={"github-icon"} className={"image"} />
                             <h4>Server application</h4>
                             <i className={"description"}>This code gives us insight into the very background and logic of the so-called backend, which is intended for data calculation</i>
                             <div className={"text-center mt-4"}>
-                                <a href={"https://github.com/Mister-3551/Backend"} target={"_blank"} rel={"noreferrer"}>View code</a>
+                                <a href={"https://github.com/Mister-3551/MSR-Server"} target={"_blank"} rel={"noreferrer"}>View code</a>
                             </div>
                         </div>
                     </div>

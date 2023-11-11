@@ -61,7 +61,7 @@ export const combineTextWithImages = (item) => {
                 return (
                     <div className={"text-center item mt-4 mb-4"} key={index}>
                         <img
-                            src={`${imageUrl}`}
+                            src={`${process.env.REACT_APP_IMAGES_NEWS  + imageUrl}`}
                             alt={`${imageId}`}
                             className={"img-fluid mb-3 col-12 news-image"}
                         />

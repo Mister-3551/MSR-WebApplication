@@ -22,7 +22,7 @@ export default function Weapons() {
                     weapons.map((weapon, id) =>
                         <div key={id} className={"col-lg-4 col-md-6 col-sm-12 mb-4"}>
                             <div className={"card weapons-card"}>
-                                <img src={weapon.image} alt={weapon.name} className={"image mt-2"}/>
+                                <img src={process.env.REACT_APP_IMAGES_WEAPONS + weapon.image} alt={weapon.name} className={"image mt-2"}/>
                                 <div className={"card-body"}>
                                     <div className={"weapons-details"}>
                                         <div className={"weapons-detail"}>

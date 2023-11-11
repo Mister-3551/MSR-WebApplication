@@ -24,7 +24,7 @@ export default function Item() {
                         <div key={id} className={"col-md-8 section-bg mb-5"}>
                             <div className={"item"}>
                                 <img
-                                    src={itemData.image}
+                                    src={process.env.REACT_APP_IMAGES_NEWS + itemData.image}
                                     className={"img-fluid mb-3 col-12 image"}
                                     alt={itemData.title}
                                 />
@@ -44,7 +44,7 @@ export default function Item() {
                             <div key={id} className={"col-12 mb-4"}>
                                 <div className={"card item-card"}>
                                     <img
-                                        src={suggestion.image}
+                                        src={process.env.REACT_APP_IMAGES_NEWS + suggestion.image}
                                         alt={suggestion.title} className={"item-news"}/>
                                     <div className={"card-body"}>
                                         <h5 className={"card-title"}>{suggestion.title}</h5>

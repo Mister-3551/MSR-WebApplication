@@ -18,7 +18,7 @@ export default function News() {
                     news.map((item, id) =>
                         <div key={id} className={"col-lg-4 col-md-6 col-sm-12 mb-4"}>
                             <div className={"card news-card"}>
-                                <img src={item.image} alt={item.title} className={"image"}/>
+                                <img src={process.env.REACT_APP_IMAGES_NEWS + item.image} alt={item.title} className={"image"}/>
                                 <div className={"card-body"}>
                                     <h5 className={"card-title"}>{item.title}</h5>
                                     <span>{item.createdAt}</span>
