@@ -1,0 +1,847 @@
+:root {
+  scroll-behavior: smooth;
+  --color-dark-gray: #212529;
+  --color-dark-light-gray: rgba(33, 37, 41, 0.4);
+  --color-red: #ce1212;
+  --color-dark-slate-blue: #37373f;
+  --color-scarlet: #ec2727;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-light-gray: #eeeeee;
+  --color-transparent: rgba(255, 255, 255, 0);
+  --color-dark-grey-transparent: rgba(55, 55, 63, 0.1)
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--color-dark-slate-blue);
+}
+
+/*--------------------------------------------------------------
+# Navigation Section
+--------------------------------------------------------------*/
+.navbar .navigation-hamburger {
+  color: var(--color-transparent) !important;
+}
+
+.navbar .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.navbar .button:hover {
+  background: var(--color-scarlet);
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    max-height: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Index - About Section
+--------------------------------------------------------------*/
+.about {
+  background-color: var(--color-light-gray);
+}
+
+.about .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.about .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Index - Download Section
+--------------------------------------------------------------*/
+.download .requirements {
+  max-width: 393px;
+  margin-bottom: 25px;
+  padding: 25px;
+  background: var(--color-scarlet);
+  color: var(--color-white);
+  height: auto;
+}
+
+.download .requirements h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.download .requirements p {
+  margin-bottom: 5px;
+}
+
+.download .requirements .download-button i {
+  font-size: 14px;
+}
+
+.download .files .member {
+  text-align: center;
+  background: var(--color-white);
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--color-dark-grey-transparent);
+  transition: 0.3s;
+}
+
+.download .files .member h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.download .files .member:hover {
+  transform: scale(1.1);
+}
+
+.download .files .member .image {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 992px) and (max-width: 1399px){
+  .download .requirements {
+    margin: auto auto 25px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px){
+  .download .requirements {
+    margin: auto auto 25px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Index - Github Section
+--------------------------------------------------------------*/
+.github {
+  background-color: var(--color-light-gray);
+}
+
+.github .member {
+  text-align: center;
+  background: var(--color-white);
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  border: 3px solid var(--color-dark-grey-transparent);
+  transition: 0.3s;
+}
+
+.github .member h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.github .member:hover {
+  transform: scale(1.1);
+}
+
+.github .member .description {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+  height: 60px;
+}
+
+.github .member .image {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .github .member {
+    margin: auto auto 25px;
+    max-width: 75%;
+  }
+
+  .github .member .description {
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .github .member .description {
+    height: 80px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Index - Maps Section
+--------------------------------------------------------------*/
+.map .info-item {
+  background: var(--color-light-gray);
+  padding: 30px;
+  height: 100%;
+}
+
+.map .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.map .info-item p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.map .info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: var(--color-white);
+  background: var(--color-scarlet);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.map .google-maps {
+  border: 0;
+  width: 100%;
+  height: 350px;
+}
+
+/*--------------------------------------------------------------
+# Index Contact Section
+--------------------------------------------------------------*/
+.form .input-form .textarea {
+  resize: none;
+}
+
+/*--------------------------------------------------------------
+# Form Section
+--------------------------------------------------------------*/
+.form {
+  background-color: var(--color-light-gray);
+}
+
+.form .input-form .input:focus {
+  border-color: var(--color-red);
+}
+
+.form .input-form .label {
+  display: flex;
+  align-items: center;
+}
+
+.form .input-form .input {
+  height: 48px;
+}
+
+.form .input-form .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.form .input-form .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+.news {
+  background-color: var(--color-light-gray);
+}
+
+.news .news-card {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.news .news-card:hover {
+  transform: scale(1.1);
+}
+
+.news .image {
+  height: 150px;
+  width: 100%;
+}
+
+.news .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.news .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Item Section
+--------------------------------------------------------------*/
+.item {
+  background-color: var(--color-light-gray);
+}
+
+.item .image {
+  max-height: 400px;
+}
+
+.item .news-image {
+  max-height: 300px;
+  max-width: 70%;
+}
+
+.item .item-news {
+  max-height: 200px !important;
+}
+
+.item .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.item .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Popup
+--------------------------------------------------------------*/
+.popup .text-right {
+  text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Admin Section
+--------------------------------------------------------------*/
+.admin .files .member {
+  text-align: center;
+  background: var(--color-white);
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--color-dark-grey-transparent);
+  transition: 0.3s;
+}
+
+.admin .files .member h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.admin .files .member:hover {
+  transform: scale(1.1);
+}
+
+.admin .files .member .image {
+  width: 50px;
+  height: 50px;
+}
+
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+.home .files .member {
+  text-align: center;
+  background: var(--color-white);
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--color-dark-grey-transparent);
+  transition: 0.3s;
+}
+
+.home .files .member h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.home .files .member:hover {
+  transform: scale(1.1);
+}
+
+.home .files .member .image {
+  width: 50px;
+  height: 50px;
+}
+
+/*--------------------------------------------------------------
+# Missions Section
+--------------------------------------------------------------*/
+.missions {
+  background-color: var(--color-light-gray);
+}
+
+.missions .missions-card {
+  min-height: 100%;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.missions .missions-card:hover {
+  transform: scale(1.1);
+}
+
+.missions .image {
+  height: 150px;
+  width: 100%;
+}
+
+.missions .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.missions .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Missions Statistics Section
+--------------------------------------------------------------*/
+.missions-statistics {
+  background-color: var(--color-light-gray);
+}
+
+.missions-statistics .missions-statistics-card {
+  min-height: 100%;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.missions-statistics .missions-statistics-card:hover {
+  transform: scale(1.1);
+}
+
+.missions-statistics-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.missions-statistics-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*--------------------------------------------------------------
+# Profile Section
+--------------------------------------------------------------*/
+.profile {
+  background-color: var(--color-light-gray);
+}
+
+.profile .card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: var(--color-transparent);
+}
+
+.profile .card .card-header {
+  width: 100%;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--color-white);
+}
+
+.profile .card .card-header .user .follow-button {
+  text-align: center;
+}
+
+.profile .card .card-header .user .follow-button .button {
+  background: var(--color-red);
+  color: var(--color-white);
+  border: 0;
+  padding: 12px 40px;
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.profile .card .card-header .user .follow-button .button:hover {
+  background: var(--color-scarlet);
+}
+
+.profile .card .card-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-transparent);
+  flex-direction: column;
+}
+
+.profile .card .card-header .user .user-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.profile .card .card-header .user .user-info .image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile .card .card-header .user .user-info .heading-box {
+  min-width: 270px;
+}
+
+.profile .card .card-header .user .user-info .heading-box h1 {
+  font-size: 2em;
+  margin: 0 0 5px;
+}
+
+.profile .card .card-header .user .user-info .heading-box h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.profile .card .card-header .user .user-info .heading-box h3 i {
+  margin-left: 2%;
+}
+
+.profile .card .card-main .activity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px 0;
+  text-align: center;
+  border: 2px solid var(--color-black);
+  border-radius: 4px;
+  margin: 5px;
+  width: 100%;
+}
+
+.profile .card .card-main .activity:hover {
+  background-color: var(--color-scarlet);
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .profile .card .card-header .user .user-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile .card .card-header .user .follow-button .button {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  .profile .card .card-header .user {
+    display: flex ;
+    align-items: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Weapons Section
+--------------------------------------------------------------*/
+.weapons {
+  background-color: var(--color-light-gray);
+}
+
+.weapons .weapons-card {
+  min-height: 100%;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.weapons .weapons-card:hover {
+  transform: scale(1.1);
+}
+
+.weapons .weapons-card .image {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.weapons .weapons-card .card-body .weapons-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.weapons .weapons-card .card-body .weapons-details .weapons-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*--------------------------------------------------------------
+# Followers Section
+--------------------------------------------------------------*/
+.followers {
+  background-color: var(--color-light-gray);
+}
+
+.followers .user {
+  max-width: 800px;
+}
+
+.followers .user .card {
+  margin-bottom: 5px;
+}
+
+.followers .user .card .card-body .image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.followers .user .card .card-body .card-title {
+  margin-bottom: -5px;
+}
+
+.followers .user .card .card-body .link {
+  text-decoration: none;
+}
+
+.followers .user .card .card-body .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.followers .user .card .card-body .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Search Section
+--------------------------------------------------------------*/
+.search {
+  background-color: var(--color-light-gray);
+}
+
+.search .user {
+  max-width: 800px;
+}
+
+.search .user .card {
+  margin-bottom: 5px;
+}
+
+.search .user .card .card-body .image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.search .user .card .card-body .card-title {
+  margin-bottom: -5px;
+}
+
+.search .user .card .card-body .link {
+  text-decoration: none;
+}
+
+.search .user .card .card-body .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.search .user .card .card-body .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Leaderboard Section
+--------------------------------------------------------------*/
+.leaderboard {
+  background-color: var(--color-light-gray);
+}
+
+.leaderboard .user {
+  max-width: 800px;
+}
+
+.leaderboard .user .card .card-body .image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leaderboard .user .card .card-body .card-title {
+  margin-bottom: -5px;
+}
+
+.leaderboard .user .card .card-body .link {
+  text-decoration: none;
+}
+
+.leaderboard .user .card .card-body .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.leaderboard .user .card .card-body .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Account Section
+--------------------------------------------------------------*/
+.account {
+  background-color: var(--color-light-gray);
+}
+
+.account .input-form .input:focus {
+  border-color: var(--color-red);
+}
+
+.account .input-form .label {
+  display: flex;
+  align-items: center;
+}
+
+.account .input-form .input {
+  height: 48px;
+}
+
+.account .input-form .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.account .input-form .button:hover {
+  background: var(--color-scarlet);
+}
+
+/*--------------------------------------------------------------
+# Add Missions Section
+--------------------------------------------------------------*/
+.addMissions {
+  background-color: var(--color-light-gray);
+}
+
+.addMissions .input-form .input:focus {
+  border-color: var(--color-red);
+}
+
+.addMissions .input-form .label {
+  display: flex;
+  align-items: center;
+}
+
+.addMissions .input-form .input {
+  height: 48px;
+}
+
+.addMissions .input-form .button {
+  background: var(--color-red);
+  border: 0;
+  padding: 12px 40px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.addMissions .input-form .button:hover {
+  background: var(--color-scarlet);
+}
+
+
+/*--------------------------------------------------------------
+# Admin Statistics Section
+--------------------------------------------------------------*/
+.admin-statistics {
+  background-color: var(--color-light-gray);
+}
+
+.admin-statistics .canvas {
+  min-height: 175px;
+  max-height: 175px;
+}
