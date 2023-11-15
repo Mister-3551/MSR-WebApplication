@@ -33,7 +33,6 @@ export default function Statistics() {
     const navigate = useNavigate();
     const {signOut} = useAuth();
 
-    const [chartData, setChartData] = useState([]);
     const [pieChart, setPieChart] = useState([]);
     const [barChart, setBarChart] = useState([]);
     const [lineChart, setLineChart] = useState([]);
@@ -54,7 +53,7 @@ export default function Statistics() {
 
     const lineChartData = {
         labels: lineChart.labels === undefined ? "" : lineChart.labels,
-        datasets: lineChart.datasets === undefined ? [] : lineChart.datasets
+        datasets: lineChart.datasets === undefined ? [] : lineChart.datasets,
     };
 
     return (
@@ -63,29 +62,27 @@ export default function Statistics() {
                 <div className="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
                     <div className="card admin-statistics-card">
                         <div className="card-body">
-                            <h5 className="text-center">Weapon Statistics</h5>
+                            <h5 className="text-center">Weapon use</h5>
                             <div className="text-center">
                                 <Pie data={pieChartData} options={pieChart.options} className={"canvas"}/>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div className="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
                     <div className="card admin-statistics-card">
                         <div className="card-body">
-                            <h5 className="text-center">Play Time Statistics</h5>
+                            <h5 className="text-center">Play time</h5>
                             <div className="text-center">
                                 <Bar data={barChartData} options={barChart.options} className={"canvas"}/>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div className="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
                     <div className="card admin-statistics-card">
                         <div className="card-body">
-                            <h5 className="text-center">Successful Missions</h5>
+                            <h5 className="text-center">Completed missions</h5>
                             <div className="text-center">
                                 <Line data={lineChartData} options={lineChart.options} className={"canvas"}/>
                             </div>

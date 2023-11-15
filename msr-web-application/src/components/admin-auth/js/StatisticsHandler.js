@@ -22,7 +22,5 @@ export const chartStatistics = (setPieChart, setBarChart, setLineChart, navigate
                 console.clear();
                 SignOutHandler.signOut(null, navigate, signOut);
             });
-    } else {
-
     }
 }
